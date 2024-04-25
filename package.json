@@ -1,0 +1,33 @@
+{
+  "name": "material-ui-nextjs",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/material": "^5.15.14",
+    "@mui/material-nextjs": "latest",
+    "asn1js": "^3.0.5",
+    "eslint": "latest",
+    "eslint-config-next": "^14.1.4",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "next": "^14.1.4",
+    "next-client-cookies": "^1.1.0",
+    "pkijs": "^3.0.16",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.25",
+    "typescript": "5.4.2"
+  }
+}
