@@ -1,45 +1,32 @@
-# Material UI - Next.js App Router example
+# Certer
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped using [`create-next-app`](https://github.com/vercel/next.js/tree/HEAD/packages/create-next-app) with Material UI installed.
+`Certer`為免費且開放原始碼的跨平臺網頁程式，提供使用者產生憑證請求檔(CSR)的功能。
 
-## How to use
+## 簡介
+本專案為`Next.js`網頁應用程式。程式提供使用者透過網頁產生憑證請求檔(CSR)的功能，而不須使用`Openssl`指令，輸入的資訊將儲存於`Cookie`，於下次使用時自動帶入，避免重複輸入相同資訊。
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+程式使用瀏覽器內建的`Web Crypto API`來產生金鑰對，使用`pkijs`來產生憑證請求檔，最後使用`jszip`將憑證請求檔及私鑰壓縮後提供使用者下載。
 
-<!-- #default-branch-switch -->
+程式在產生金鑰對及憑證請求檔時皆在使用者自己的瀏覽器執行，其他人無法取得，如果有疑慮，可在成功載入網頁後中斷網路連線，或將程式碼下載至本機執行。
 
-```bash
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/material-ui-nextjs
-cd material-ui-nextjs
-```
+## Demo
+[certer.keke125.com](https://certer.keke125.com/) 由`Certer`官方維護，提供使用者 Demo。
 
-Install it and run:
+以`PaaS`方式部署至`Vercel`
 
-```bash
-npm install
-npm run dev
-```
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 技術
 
-or:
+### 程式語言、框架  
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white) ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 
-<!-- #default-branch-switch -->
+## 程式截圖
+![填寫申請資料](img/img.png)
+填寫申請資料
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-ui-nextjs)
+![確認申請資料](img/img_1.png)
+確認申請資料
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/mui/material-ui/tree/master/examples/material-ui-nextjs)
-
-## Learn more
-
-To learn more about this example:
-
-- [Next.js documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Customizing Material UI](https://mui.com/material-ui/customization/how-to-customize/) - approaches to customizing Material UI.
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+![下載CSR及私鑰](img/img_2.png)
+下載CSR及私鑰
