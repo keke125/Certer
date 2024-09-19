@@ -20,7 +20,7 @@
     "eslint-config-next": "^14.1.4",
     "file-saver": "^2.0.5",
     "jszip": "^3.10.1",
-    "next": "^14.1.4",
+    "next": "^14.2.12",
     "next-client-cookies": "^1.1.0",
     "pkijs": "^3.0.16",
     "react": "latest",
